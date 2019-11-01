@@ -40,6 +40,13 @@ kubectl delete deploy/nginx  kubectl delete svc/nginx-service
 
 
 
+> 命令补全
+>
+> yum -y install  bash-completion 
+>
+> source /usr/share/bash-completion/bash_completion
+> source  <(kubectl  completion  bash)
+
 
 
 ## 2.基础命令

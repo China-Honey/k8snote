@@ -51,7 +51,13 @@ spec:
           path: /data/shared
 ```
 
-
+> ### Node节点上必须安装，否则调度会失败，查看rpcbind、nfs是否安装
+>
+> rpm -qa|grep nfs
+>
+> rpm -qa|grep rpcbind
+>
+> 安装命令：yum install -y nfs-utils rpcbind
 
 
 # 二、PersistentVolume
@@ -90,8 +96,8 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    path: "/data/shared"
-    server: 192.168.1.248
+    path: "/volume1/k8s-nfs"
+    server: 192.168.1.11
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -236,17 +242,20 @@ parameters:
 3.nfs-提供者 pod
 
 ```
----
+---                                                
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: nfs-client-provisioner
 ---
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: nfs-client-provisioner
 spec:
+  selector:
+    matchLabels:
+      app: nfs-client-provisioner
   replicas: 1
   strategy:
     type: Recreate
@@ -266,14 +275,14 @@ spec:
             - name: PROVISIONER_NAME
               value: fuseim.pri/ifs
             - name: NFS_SERVER
-              value: 192.168.1.248                                                       
+              value: 192.168.1.11
             - name: NFS_PATH
-              value: /data/shared
+              value: /volume1/k8s-nfs
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 192.168.1.248
-            path: /data/shared   #NFS上配置/data/shared *(rw,no_root_squash)
+            server: 192.168.1.11
+            path: /volume1/k8s-nfs  #NFS上配置/data/shared *(rw,no_root_squash)
 
 
 ```
@@ -306,11 +315,15 @@ spec:
   resources:
     requests:
       storage: 5Gi
+      
+      
 #2.编写POD或控制器使用 PV
-
+apiVersion: v1
 kind: Pod
 metadata:
   name: test-pod
+  labels:
+    env: test
 spec:
   containers:
     - name: test-pod
@@ -325,6 +338,25 @@ spec:
     - name: www
       persistentVolumeClaim:
         claimName: test-claim
+
+
+
+```
+
+
+
+
+
+
+
+```shell
+
+#查看标签
+kubectl get pod --show-lables
+
+#暴露端口测试
+[root@master-a nfs]# kubectl expose -f pod.yaml --port=8001 --target-port=80 --type=NodePort --labels=env=test
+Error from server (AlreadyExists): services "test-pod" already exists
 
 
 
