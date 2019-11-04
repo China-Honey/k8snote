@@ -1,7 +1,4 @@
----
-typora-root-url: ./
-typora-copy-images-to: ./
----
+
 
 # 1.Kubernetes是什么
 
@@ -40,11 +37,11 @@ typora-copy-images-to: ./
 
 
 
-![1572835278958](/assets/1572835278958.png)
+![1572835278958](./assets/1572835278958.png)
 
 
 
-![1572835326440](assets/1572835326440.png)
+![1572835326440](./assets/1572835326440.png)
 
 
 
@@ -87,7 +84,7 @@ typora-copy-images-to: ./
 
 # 4.Kubernetes核心概念-
 
-![1572835346237](assets/1572835346237.png)
+![1572835346237](./assets/1572835346237.png)
 
 
 
