@@ -4,13 +4,13 @@
 - 通过Ingress Controller实现Pod的负载均衡
 - 支持TCP/UDP 4层和HTTP 7层
 
-![1567996634661](D:\教程\lzl_K8S群购买\笔记\assets\1567996634661.png)
+![1567996634661](\assets\1567996634661.png)
 
 # 二、Ingress Controller
 
 
 
-![1567996655793](D:\教程\lzl_K8S群购买\笔记\assets\1567996655793.png)
+![1567996655793](\assets\1567996655793.png)
 
 
 

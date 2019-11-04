@@ -40,13 +40,11 @@ typora-copy-images-to: ./
 
 
 
-![1566910778681](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1566910778681.png)
+![1572835278958](/assets/1572835278958.png)
 
 
 
-![1566910840236](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1566910840236.png)
-
-
+![1572835326440](assets/1572835326440.png)
 
 
 
@@ -89,7 +87,7 @@ typora-copy-images-to: ./
 
 # 4.Kubernetes核心概念-
 
-![1566911146265](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1566911146265.png)
+![1572835346237](assets/1572835346237.png)
 
 
 

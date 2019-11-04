@@ -2,7 +2,7 @@
 
 
 
-![1568280837735](D:\教程\lzl_K8S群购买\笔记\assets\1568280837735.png)
+![1568280837735](\assets\1568280837735.png)
 
 
 
@@ -20,7 +20,7 @@
 
 # 四、构建Jenkins-Slave镜像
 
-![1568280895846](D:\教程\lzl_K8S群购买\笔记\assets\1568280895846.png)
+![1568280895846](\assets\1568280895846.png)
 
 参考：https://github.com/jenkinsci/docker-jnlp-slave
 
