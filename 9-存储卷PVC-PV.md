@@ -75,7 +75,7 @@ A(POD) -->B(PVC)
 B --> C(P  V)
 ```
 
-![1568011733147](\assets\1568011733147.png)
+![1568011733147](assets\1568011733147.png)
 
 Kubernetes支持持久卷的存储插件：
 
@@ -136,7 +136,7 @@ Dynamic Provisioning机制工作的核心在于StorageClass的API对象。
 
 StorageClass声明存储插件，用于自动创建PV。
 
-![1568011766802](\assets\1568011766802.png)
+![1568011766802](assets\1568011766802.png)
 
 
 
@@ -237,7 +237,7 @@ parameters:
 
 ```
 
-
+`kubectl get StorageClass`
 
 3.nfs-提供者 pod
 

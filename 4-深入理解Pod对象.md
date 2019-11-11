@@ -1,6 +1,4 @@
----
-typora-copy-images-to: ./
----
+
 
 -  最小部署单元
 - 一组容器的集合
@@ -218,7 +216,7 @@ spec:
 
 # 六、调度约束
 
-![1567671565323](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1567671565323.png)
+![1572967425344](assets/1572967425344.png)
 
 #### 1、nodeName用于将Pod调度到指定的Node名称上
 

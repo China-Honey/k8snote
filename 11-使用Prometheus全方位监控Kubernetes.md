@@ -40,7 +40,7 @@ https://github.com/prometheus
 
 # 三、Prometheus组件及架构
 
-![1568272798482](\assets\1568272798482.png)
+![1568272798482](assets\1568272798482.png)
 
 - Prometheus Server：收集指标和存储时间序列数据，并提供查询接口
 - ClientLibrary：客户端库
@@ -95,7 +95,7 @@ https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubern
 
 
 
-![1568272921837](\assets\1568272921837.png)
+![1568272921837](assets\1568272921837.png)
 
 
 
@@ -169,7 +169,7 @@ https://github.com/kubernetes/kube-state-metrics
 
 
 
-![1568273961364](\assets\1568273961364.png)
+![1568273961364](assets\1568273961364.png)
 
 1. 部署Alertmanager
 2. 配置Prometheus与Alertmanager通信

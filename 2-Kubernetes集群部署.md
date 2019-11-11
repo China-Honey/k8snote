@@ -1620,6 +1620,14 @@ kubectl exec -ti busybox -- nslookup kubernetes.default
 
 ```
 
+### 7.验证方法3
+
+```
+kubectl run  -it --image=busbox:1.28.4 --rm --restart=Never sh 
+```
+
+
+
 
 
 # 十一、部署Web UI（Dashboard）

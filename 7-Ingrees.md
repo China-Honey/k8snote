@@ -4,13 +4,13 @@
 - 通过Ingress Controller实现Pod的负载均衡
 - 支持TCP/UDP 4层和HTTP 7层
 
-![1567996634661](\assets\1567996634661.png)
+![1567996634661](assets\1567996634661.png)
 
 # 二、Ingress Controller
 
 
 
-![1567996655793](\assets\1567996655793.png)
+![1567996655793](assets\1567996655793.png)
 
 
 
@@ -375,7 +375,7 @@ spec:
 
 ### 例子2：HTTPS
 
-生成证书.sh：
+生成证书导入到K8S中：
 
 ```
 cat > ca-config.json <<EOF
