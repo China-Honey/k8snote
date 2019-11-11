@@ -34,7 +34,7 @@
 
 - 单集群架构图
 
-![](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1566912632493.png)
+![](D:\k8snote\2-Kubernetes集群部署.assets\1573439747042.png)
 
 
 
@@ -42,7 +42,7 @@
 
 - 多Master集群架构图
 
-![1566912675986](C:\Users\Qinzicheng\AppData\Roaming\Typora\typora-user-images\1566912675986.png)
+![1566912675986](D:\k8snote\2-Kubernetes集群部署.assets\1573439759982.png)
 
 # 二、官方提供的三种部署方式
 
